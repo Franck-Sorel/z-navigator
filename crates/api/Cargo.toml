@@ -1,0 +1,27 @@
+[package]
+name = "money-road-api"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "money-road-api"
+path = "src/main.rs"
+
+[dependencies]
+money-road-domain = { path = "../domain" }
+money-road-evidence = { path = "../evidence" }
+money-road-rules-engine = { path = "../rules-engine" }
+money-road-route-engine = { path = "../route-engine" }
+money-road-provider-adapters = { path = "../provider-adapters" }
+axum.workspace = true
+tokio.workspace = true
+tower.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+sqlx.workspace = true
+dotenvy.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+chrono.workspace = true
+uuid.workspace = true

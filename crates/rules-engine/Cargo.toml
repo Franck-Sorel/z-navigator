@@ -1,0 +1,11 @@
+[package]
+name = "money-road-rules-engine"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+money-road-domain = { path = "../domain" }
+serde.workspace = true
+chrono.workspace = true
+uuid.workspace = true
